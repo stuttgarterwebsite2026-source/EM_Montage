@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title data-i18n="privacy.title">Datenschutzerklärung – EM Montage & Dienstleistungen</title>
+    <meta name="robots" content="noindex" />
+    <meta name="theme-color" content="#1a4f91" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" type="image/png" href="assets/img/EM_logo.png" />
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <!-- ====================== HEADER ====================== -->
+    <header class="site-header">
+      <div class="container navbar">
+        <a class="brand" href="index.html" aria-label="EM Montage & Dienstleistungen – Startseite">
+          <img class="brand__logo" src="assets/img/EM_logo.png" alt="EM Montage & Dienstleistungen Logo" />
+          <span class="brand__text">
+            <span class="brand__name">EM Montage</span>
+            <span class="brand__sub">& Dienstleistungen</span>
+          </span>
+        </a>
+
+        <nav class="nav" id="primary-nav" aria-label="Hauptnavigation">
+          <ul class="nav__list">
+            <li><a class="nav__link" href="index.html#start" data-i18n="nav.home">Start</a></li>
+            <li><a class="nav__link" href="index.html#leistungen" data-i18n="nav.services">Leistungen</a></li>
+            <li><a class="nav__link" href="index.html#ueber-uns" data-i18n="nav.about">Über uns</a></li>
+            <li><a class="nav__link" href="index.html#kontakt" data-i18n="nav.contact">Kontakt</a></li>
+          </ul>
+        </nav>
+
+        <div class="nav-actions">
+          <div class="lang-switch" role="group" data-i18n-attr="aria-label:nav.langLabel" aria-label="Sprache wechseln">
+            <button type="button" class="lang-btn" data-lang-btn="de" aria-pressed="true">DE</button>
+            <button type="button" class="lang-btn" data-lang-btn="en" aria-pressed="false">EN</button>
+          </div>
+          <button type="button" class="nav-toggle" data-nav-toggle aria-expanded="false" aria-controls="primary-nav" data-i18n-attr="aria-label:nav.menu" aria-label="Menü öffnen">
+            <span></span><span></span><span></span>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <!-- ====================== INHALT ====================== -->
+    <main class="legal">
+      <div class="container">
+        <div class="legal__wrap">
+          <a class="legal__back" href="index.html" data-i18n="legal.back">← Zurück zur Startseite</a>
+
+          <h1 data-i18n="privacy.title"></h1>
+
+          <h2 data-i18n="privacy.introTitle"></h2>
+          <p data-i18n="privacy.intro"></p>
+
+          <h2 data-i18n="privacy.responsibleTitle"></h2>
+          <p data-i18n="privacy.responsibleIntro"></p>
+          <div class="legal-block">
+            <p data-i18n="privacy.responsibleBody"></p>
+          </div>
+
+          <h2 data-i18n="privacy.hostingTitle"></h2>
+          <p data-i18n="privacy.hosting"></p>
+
+          <h2 data-i18n="privacy.rightsTitle"></h2>
+          <p data-i18n="privacy.rights"></p>
+
+          <h2 data-i18n="privacy.contactDataTitle"></h2>
+          <p data-i18n="privacy.contactData"></p>
+
+          <h2 data-i18n="privacy.formTitle"></h2>
+          <p data-i18n="privacy.form"></p>
+
+          <h2 data-i18n="privacy.storageTitle"></h2>
+          <p data-i18n="privacy.storage"></p>
+
+          <h2 data-i18n="privacy.sslTitle"></h2>
+          <p data-i18n="privacy.ssl"></p>
+
+          <h2 data-i18n="privacy.updatedTitle"></h2>
+          <p data-i18n="privacy.updated"></p>
+        </div>
+      </div>
+    </main>
+
+    <!-- ====================== FOOTER ====================== -->
+    <footer class="site-footer">
+      <div class="container">
+        <div class="footer-bottom" style="border-top:none;">
+          <span>&copy; <span id="current-year">2026</span> EM Montage &amp; Dienstleistungen. <span data-i18n="footer.rights"></span></span>
+          <span>
+            <a href="impressum.html" data-i18n="footer.imprint"></a>
+            &nbsp;·&nbsp;
+            <a href="datenschutz.html" data-i18n="footer.privacy"></a>
+          </span>
+        </div>
+      </div>
+    </footer>
+
+    <script src="js/translations.js"></script>
+    <script src="js/main.js" defer></script>
+  </body>
+</html>

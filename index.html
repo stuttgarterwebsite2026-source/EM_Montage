@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title data-i18n="meta.title">EM Montage & Dienstleistungen – Senden & Umgebung</title>
+    <meta name="description" data-i18n-attr="content:meta.description" content="" />
+    <meta name="theme-color" content="#1a4f91" />
+
+    <!-- Schriftart -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="icon" type="image/png" href="assets/img/EM_logo.png" />
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#leistungen">Zum Inhalt springen</a>
+
+    <!-- ====================== HEADER / NAVBAR ====================== -->
+    <header class="site-header">
+      <div class="container navbar">
+        <a class="brand" href="#start" aria-label="EM Montage & Dienstleistungen – Startseite">
+          <img
+            class="brand__logo"
+            src="assets/img/EM_logo.png"
+            alt="EM Montage & Dienstleistungen Logo"
+          />
+          <span class="brand__text">
+            <span class="brand__name">EM Montage</span>
+            <span class="brand__sub">& Dienstleistungen</span>
+          </span>
+        </a>
+
+        <nav class="nav" id="primary-nav" aria-label="Hauptnavigation">
+          <ul class="nav__list">
+            <li><a class="nav__link" href="#start" data-i18n="nav.home">Start</a></li>
+            <li><a class="nav__link" href="#leistungen" data-i18n="nav.services">Leistungen</a></li>
+            <li><a class="nav__link" href="#ueber-uns" data-i18n="nav.about">Über uns</a></li>
+            <li><a class="nav__link" href="#kontakt" data-i18n="nav.contact">Kontakt</a></li>
+          </ul>
+        </nav>
+
+        <div class="nav-actions">
+          <div class="lang-switch" role="group" data-i18n-attr="aria-label:nav.langLabel" aria-label="Sprache wechseln">
+            <button type="button" class="lang-btn" data-lang-btn="de" aria-pressed="true">DE</button>
+            <button type="button" class="lang-btn" data-lang-btn="en" aria-pressed="false">EN</button>
+          </div>
+          <button
+            type="button"
+            class="nav-toggle"
+            data-nav-toggle
+            aria-expanded="false"
+            aria-controls="primary-nav"
+            data-i18n-attr="aria-label:nav.menu"
+            aria-label="Menü öffnen"
+          >
+            <span></span><span></span><span></span>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <!-- ====================== HERO ====================== -->
+      <section class="hero" id="start">
+        <div class="container">
+          <div class="hero__inner">
+            <span class="hero__badge" data-i18n="hero.badge"></span>
+            <h1 class="hero__title" data-i18n="hero.title"></h1>
+            <p class="hero__slogan" data-i18n="hero.slogan"></p>
+            <p class="hero__text" data-i18n="hero.text"></p>
+            <div class="hero__actions">
+              <a class="btn btn--primary" href="tel:+4915208612664">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                <span data-i18n="hero.callBtn">Jetzt anrufen</span>
+              </a>
+              <a class="btn btn--whatsapp" href="https://wa.me/4915208612664" target="_blank" rel="noopener">
+                <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M.057 24l1.687-6.163a11.867 11.867 0 0 1-1.587-5.946C.16 5.335 5.495 0 12.05 0a11.817 11.817 0 0 1 8.413 3.488 11.824 11.824 0 0 1 3.48 8.414c-.003 6.557-5.338 11.892-11.893 11.892a11.9 11.9 0 0 1-5.688-1.448L.057 24zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884a9.86 9.86 0 0 0 1.512 5.26l-.999 3.648 3.736-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.71.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.247-.694.247-1.289.173-1.413z"/></svg>
+                <span data-i18n="hero.whatsappBtn">WhatsApp</span>
+              </a>
+            </div>
+            <span class="hero__region">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+              <span data-i18n="hero.regionLabel"></span>
+            </span>
+          </div>
+        </div>
+      </section>
+
+      <!-- ====================== LEISTUNGEN ====================== -->
+      <section class="section" id="leistungen">
+        <div class="container">
+          <div class="section__head" data-reveal>
+            <span class="eyebrow" data-i18n="services.eyebrow"></span>
+            <h2 class="section__title" data-i18n="services.title"></h2>
+            <p class="section__subtitle" data-i18n="services.subtitle"></p>
+          </div>
+
+          <div class="services-grid">
+            <!-- 1: Türen, Fenster, Zäune -->
+            <article class="service-card" data-reveal data-reveal-delay="1">
+              <div class="service-card__media">
+                <img src="assets/img/service-tueren.jpg" alt="Montage von Türen und Fenstern" loading="lazy" />
+              </div>
+              <div class="service-card__body">
+                <span class="service-card__icon">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 21h18"/><path d="M5 21V5a2 2 0 0 1 2-2h6a2 2 0 0 1 2 2v16"/><path d="M12 12h.01"/><path d="M19 21V9l-4-4"/></svg>
+                </span>
+                <h3 class="service-card__title" data-i18n="services.1.title"></h3>
+                <p class="service-card__text" data-i18n="services.1.text"></p>
+              </div>
+            </article>
+
+            <!-- 2: Schweißarbeiten -->
+            <article class="service-card" data-reveal data-reveal-delay="2">
+              <div class="service-card__media">
+                <img src="assets/img/service-schweissen.jpg" alt="Schweißarbeiten" loading="lazy" />
+              </div>
+              <div class="service-card__body">
+                <span class="service-card__icon">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg>
+                </span>
+                <h3 class="service-card__title" data-i18n="services.2.title"></h3>
+                <p class="service-card__text" data-i18n="services.2.text"></p>
+              </div>
+            </article>
+
+            <!-- 3: Möbel- & Küchenmontage -->
+            <article class="service-card" data-reveal data-reveal-delay="3">
+              <div class="service-card__media">
+                <img src="assets/img/service-kueche.jpg" alt="Möbel- und Küchenmontage" loading="lazy" />
+              </div>
+              <div class="service-card__body">
+                <span class="service-card__icon">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 10h18"/><path d="M5 10V6a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2v4"/><path d="M4 10v8a1 1 0 0 0 1 1h1"/><path d="M20 10v8a1 1 0 0 1-1 1h-1"/><path d="M6 19v2"/><path d="M18 19v2"/><path d="M9 7h6"/></svg>
+                </span>
+                <h3 class="service-card__title" data-i18n="services.3.title"></h3>
+                <p class="service-card__text" data-i18n="services.3.text"></p>
+              </div>
+            </article>
+
+            <!-- 4: Reparaturarbeiten -->
+            <article class="service-card" data-reveal data-reveal-delay="1">
+              <div class="service-card__media">
+                <img src="assets/img/service-reparatur.jpg" alt="Reparaturarbeiten" loading="lazy" />
+              </div>
+              <div class="service-card__body">
+                <span class="service-card__icon">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg>
+                </span>
+                <h3 class="service-card__title" data-i18n="services.4.title"></h3>
+                <p class="service-card__text" data-i18n="services.4.text"></p>
+              </div>
+            </article>
+
+            <!-- 5: Hausmeisterservice -->
+            <article class="service-card" data-reveal data-reveal-delay="2">
+              <div class="service-card__media">
+                <img src="assets/img/service-hausmeister.jpg" alt="Hausmeisterservice" loading="lazy" />
+              </div>
+              <div class="service-card__body">
+                <span class="service-card__icon">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><path d="M9 22V12h6v10"/></svg>
+                </span>
+                <h3 class="service-card__title" data-i18n="services.5.title"></h3>
+                <p class="service-card__text" data-i18n="services.5.text"></p>
+              </div>
+            </article>
+
+            <!-- CTA-Karte -->
+            <article class="service-card service-card--cta" data-reveal data-reveal-delay="3" style="background:var(--blue);border-color:var(--blue);color:#fff;">
+              <h3 class="service-card__title" style="color:#fff" data-i18n="contact.title"></h3>
+              <p class="service-card__text" style="color:#dbe7f7" data-i18n="contact.subtitle"></p>
+              <a class="btn btn--light" href="#kontakt" style="margin-top:8px;align-self:flex-start" data-i18n="hero.callBtn"></a>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- ====================== ÜBER UNS ====================== -->
+      <section class="section section--tint" id="ueber-uns">
+        <div class="container">
+          <div class="about">
+            <div class="about__media" data-reveal>
+              <img
+                src="assets/img/about.jpg"
+                alt="Handwerker bei der Arbeit"
+                loading="lazy"
+              />
+              <div class="about__badge">
+                <strong>EM</strong>
+                <span data-i18n="footer.region">Senden &amp; Umgebung</span>
+              </div>
+            </div>
+
+            <div data-reveal data-reveal-delay="1">
+              <span class="eyebrow" data-i18n="about.eyebrow"></span>
+              <h2 class="about__title" data-i18n="about.title"></h2>
+              <p class="about__text" data-i18n="about.text"></p>
+
+              <div class="trust-grid">
+                <div class="trust-item">
+                  <span class="trust-item__icon">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>
+                  </span>
+                  <div>
+                    <h3 data-i18n="about.point1.title"></h3>
+                    <p data-i18n="about.point1.text"></p>
+                  </div>
+                </div>
+                <div class="trust-item">
+                  <span class="trust-item__icon">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+                  </span>
+                  <div>
+                    <h3 data-i18n="about.point2.title"></h3>
+                    <p data-i18n="about.point2.text"></p>
+                  </div>
+                </div>
+                <div class="trust-item">
+                  <span class="trust-item__icon">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                  </span>
+                  <div>
+                    <h3 data-i18n="about.point3.title"></h3>
+                    <p data-i18n="about.point3.text"></p>
+                  </div>
+                </div>
+                <div class="trust-item">
+                  <span class="trust-item__icon">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9H4.5a2.5 2.5 0 0 1 0-5H6"/><path d="M18 9h1.5a2.5 2.5 0 0 0 0-5H18"/><path d="M4 22h16"/><path d="M10 14.66V17c0 .55-.47.98-.97 1.21C7.85 18.75 7 20.24 7 22"/><path d="M14 14.66V17c0 .55.47.98.97 1.21C16.15 18.75 17 20.24 17 22"/><path d="M18 2H6v7a6 6 0 0 0 12 0V2Z"/></svg>
+                  </span>
+                  <div>
+                    <h3 data-i18n="about.point4.title"></h3>
+                    <p data-i18n="about.point4.text"></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ====================== KONTAKT ====================== -->
+      <section class="section" id="kontakt">
+        <div class="container">
+          <div class="section__head" data-reveal>
+            <span class="eyebrow" data-i18n="contact.eyebrow"></span>
+            <h2 class="section__title" data-i18n="contact.title"></h2>
+            <p class="section__subtitle" data-i18n="contact.subtitle"></p>
+          </div>
+
+          <div class="contact">
+            <!-- Kontaktinfos -->
+            <div class="contact-info" data-reveal>
+              <a class="contact-card" href="tel:+4915208612664">
+                <span class="contact-card__icon">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                </span>
+                <span>
+                  <span class="contact-card__label" data-i18n="contact.phoneLabel"></span><br />
+                  <span class="contact-card__value">0152 08612664</span>
+                </span>
+              </a>
+
+              <a class="contact-card" href="https://wa.me/4915208612664" target="_blank" rel="noopener">
+                <span class="contact-card__icon">
+                  <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M.057 24l1.687-6.163a11.867 11.867 0 0 1-1.587-5.946C.16 5.335 5.495 0 12.05 0a11.817 11.817 0 0 1 8.413 3.488 11.824 11.824 0 0 1 3.48 8.414c-.003 6.557-5.338 11.892-11.893 11.892a11.9 11.9 0 0 1-5.688-1.448L.057 24zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884a9.86 9.86 0 0 0 1.512 5.26l-.999 3.648 3.736-.981z"/></svg>
+                </span>
+                <span>
+                  <span class="contact-card__label">WhatsApp</span><br />
+                  <span class="contact-card__value">0152 08612664</span>
+                </span>
+              </a>
+
+              <a class="contact-card" href="mailto:montage.service.em@gmail.com">
+                <span class="contact-card__icon">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-10 6L2 7"/></svg>
+                </span>
+                <span>
+                  <span class="contact-card__label" data-i18n="contact.emailLabel"></span><br />
+                  <span class="contact-card__value">montage.service.em@gmail.com</span>
+                </span>
+              </a>
+
+              <div class="contact-card">
+                <span class="contact-card__icon">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                </span>
+                <span>
+                  <span class="contact-card__label" data-i18n="contact.regionTitle"></span><br />
+                  <span class="contact-card__value" data-i18n="contact.regionValue"></span>
+                </span>
+              </div>
+            </div>
+
+            <!-- Kontaktformular -->
+            <form class="contact-form" id="contact-form" novalidate data-reveal data-reveal-delay="1">
+              <p class="form-error" hidden></p>
+
+              <div class="form-grid-2">
+                <div class="form-row">
+                  <label class="field-label" for="cf-name">
+                    <span data-i18n="contact.form.name"></span> <span class="req">*</span>
+                  </label>
+                  <input class="input" type="text" id="cf-name" name="name" required data-i18n-attr="placeholder:contact.form.name" />
+                </div>
+                <div class="form-row">
+                  <label class="field-label" for="cf-email">
+                    <span data-i18n="contact.form.email"></span> <span class="req">*</span>
+                  </label>
+                  <input class="input" type="email" id="cf-email" name="email" required data-i18n-attr="placeholder:contact.form.email" />
+                </div>
+              </div>
+
+              <div class="form-grid-2">
+                <div class="form-row">
+                  <label class="field-label" for="cf-phone" data-i18n="contact.form.phone"></label>
+                  <input class="input" type="tel" id="cf-phone" name="phone" data-i18n-attr="placeholder:contact.form.phone" />
+                </div>
+                <div class="form-row">
+                  <label class="field-label" for="cf-service" data-i18n="contact.form.service"></label>
+                  <select class="select" id="cf-service" name="service">
+                    <option value="" data-i18n="contact.form.serviceDefault"></option>
+                    <option data-i18n="services.1.title"></option>
+                    <option data-i18n="services.2.title"></option>
+                    <option data-i18n="services.3.title"></option>
+                    <option data-i18n="services.4.title"></option>
+                    <option data-i18n="services.5.title"></option>
+                  </select>
+                </div>
+              </div>
+
+              <div class="form-row">
+                <label class="field-label" for="cf-message">
+                  <span data-i18n="contact.form.message"></span> <span class="req">*</span>
+                </label>
+                <textarea class="textarea" id="cf-message" name="message" required data-i18n-attr="placeholder:contact.form.message"></textarea>
+              </div>
+
+              <button type="submit" class="btn btn--primary btn--block" data-i18n="contact.form.submit"></button>
+              <p class="form-note" data-i18n="contact.form.note"></p>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- ====================== FOOTER ====================== -->
+    <footer class="site-footer">
+      <div class="container">
+        <div class="footer-grid">
+          <div class="footer-col footer-brand">
+            <img class="footer-brand__logo" src="assets/img/EM_logo.png" alt="EM Montage & Dienstleistungen Logo" />
+            <p class="footer-brand__name">EM Montage &amp; Dienstleistungen</p>
+            <p class="footer-brand__tagline" data-i18n="footer.tagline"></p>
+          </div>
+
+          <div class="footer-col">
+            <h4 data-i18n="footer.servicesTitle"></h4>
+            <ul>
+              <li><a href="#leistungen" data-i18n="services.1.title"></a></li>
+              <li><a href="#leistungen" data-i18n="services.2.title"></a></li>
+              <li><a href="#leistungen" data-i18n="services.3.title"></a></li>
+              <li><a href="#leistungen" data-i18n="services.4.title"></a></li>
+              <li><a href="#leistungen" data-i18n="services.5.title"></a></li>
+            </ul>
+          </div>
+
+          <div class="footer-col">
+            <h4 data-i18n="footer.linksTitle"></h4>
+            <ul>
+              <li><a href="#start" data-i18n="nav.home"></a></li>
+              <li><a href="#ueber-uns" data-i18n="nav.about"></a></li>
+              <li><a href="impressum.html" data-i18n="footer.imprint"></a></li>
+              <li><a href="datenschutz.html" data-i18n="footer.privacy"></a></li>
+            </ul>
+          </div>
+
+          <div class="footer-col">
+            <h4 data-i18n="footer.contactTitle"></h4>
+            <ul>
+              <li class="footer-contact-item">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                <a href="tel:+4915208612664">0152 08612664</a>
+              </li>
+              <li class="footer-contact-item">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-10 6L2 7"/></svg>
+                <a href="mailto:montage.service.em@gmail.com">montage.service.em@gmail.com</a>
+              </li>
+              <li class="footer-contact-item">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                <span data-i18n="footer.region"></span>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="footer-bottom">
+          <span>&copy; <span id="current-year">2026</span> EM Montage &amp; Dienstleistungen. <span data-i18n="footer.rights"></span></span>
+          <span>
+            <a href="impressum.html" data-i18n="footer.imprint"></a>
+            &nbsp;·&nbsp;
+            <a href="datenschutz.html" data-i18n="footer.privacy"></a>
+          </span>
+        </div>
+      </div>
+    </footer>
+
+    <!-- ====================== COOKIE-BANNER ====================== -->
+    <aside class="cookie-banner" id="cookie-banner" role="dialog" aria-live="polite" aria-label="Cookie-Hinweis" hidden>
+      <h2 class="cookie-banner__title">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 2a10 10 0 1 0 10 10 4 4 0 0 1-5-5 4 4 0 0 1-5-5"/><path d="M8.5 8.5v.01"/><path d="M16 15.5v.01"/><path d="M12 12v.01"/><path d="M11 17v.01"/><path d="M7 14v.01"/></svg>
+        Cookies
+      </h2>
+      <p class="cookie-banner__text">
+        <span data-i18n="cookie.text"></span>
+        <a href="datenschutz.html" data-i18n="cookie.privacyLink"></a>
+      </p>
+      <div class="cookie-banner__actions">
+        <button type="button" class="btn btn--ghost" data-cookie-decline data-i18n="cookie.decline"></button>
+        <button type="button" class="btn btn--primary" data-cookie-accept data-i18n="cookie.accept"></button>
+      </div>
+    </aside>
+
+    <script src="js/translations.js"></script>
+    <script src="js/main.js" defer></script>
+  </body>
+</html>
