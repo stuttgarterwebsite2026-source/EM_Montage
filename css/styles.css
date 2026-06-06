@@ -1041,20 +1041,30 @@ ul {
   .nav-toggle {
     display: flex;
   }
+  /* WICHTIG: backdrop-filter würde den Header zum Bezugsrahmen für
+     position:fixed machen und das Menü auf Header-Höhe zusammenstauchen.
+     Deshalb auf dem Handy deaktivieren – Menü füllt dann den ganzen Schirm. */
+  .site-header {
+    backdrop-filter: none;
+    -webkit-backdrop-filter: none;
+    background: #fff;
+  }
   .nav {
     position: fixed;
     top: var(--header-h);
     left: 0;
     right: 0;
     bottom: 0;
+    height: auto;
     flex-direction: column;
     justify-content: flex-start;
     gap: 0;
     background: #fff;
-    padding: 24px 24px 40px;
+    padding: 20px 20px 40px;
     transform: translateX(100%);
     transition: transform var(--transition);
     overflow-y: auto;
+    overscroll-behavior: contain;
     box-shadow: var(--shadow-lg);
   }
   .nav.is-open {
