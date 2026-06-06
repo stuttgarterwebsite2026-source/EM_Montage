@@ -35,7 +35,7 @@
   --radius-lg: 22px;
   --radius-pill: 999px;
   --container: 1160px;
-  --header-h: 76px;
+  --header-h: 64px;
   --transition: 0.25s cubic-bezier(0.4, 0, 0.2, 1);
 
   --font: "Inter", system-ui, -apple-system, "Segoe UI", Roboto, Helvetica,
@@ -120,7 +120,7 @@ ul {
 }
 
 .section {
-  padding: 72px 0;
+  padding: 56px 0;
 }
 
 .section--tint {
@@ -416,8 +416,8 @@ ul {
 }
 .hero__inner {
   display: grid;
-  gap: 28px;
-  padding: 80px 0 88px;
+  gap: 22px;
+  padding: 56px 0 64px;
   max-width: 760px;
 }
 .hero__badge {
@@ -1017,6 +1017,10 @@ ul {
   .section {
     padding: 92px 0;
   }
+  .hero__inner {
+    gap: 28px;
+    padding: 80px 0 88px;
+  }
   .services-grid {
     grid-template-columns: repeat(3, 1fr);
   }
@@ -1074,7 +1078,87 @@ ul {
 }
 
 @media (min-width: 860px) {
+  :root {
+    --header-h: 76px;
+  }
   .nav {
     display: flex !important;
+  }
+}
+
+/* ---- Smartphones (Feinschliff) ---- */
+@media (max-width: 600px) {
+  .container {
+    padding: 0 16px;
+  }
+  .navbar {
+    gap: 10px;
+  }
+  .brand {
+    gap: 8px;
+    min-width: 0;
+  }
+  .brand__logo {
+    height: 40px;
+  }
+  .brand__name {
+    font-size: 0.92rem;
+  }
+  .brand__sub {
+    font-size: 0.62rem;
+  }
+  .nav-actions {
+    gap: 8px;
+  }
+  .lang-btn {
+    padding: 7px 11px;
+    font-size: 0.8rem;
+  }
+  .nav-toggle {
+    width: 42px;
+    height: 42px;
+  }
+
+  /* Hero-Buttons über die volle Breite – leichter zu tippen */
+  .hero__actions {
+    gap: 10px;
+  }
+  .hero__actions .btn {
+    width: 100%;
+  }
+
+  .section__head {
+    margin-bottom: 34px;
+  }
+
+  /* Service-Foto etwas niedriger auf kleinen Screens */
+  .service-card__media {
+    height: 160px;
+  }
+
+  /* Über-uns-Bild kompakter */
+  .about {
+    gap: 32px;
+  }
+  .about__media {
+    min-height: 230px;
+  }
+
+  /* Cookie-Banner sitzt sauber am Rand */
+  .cookie-banner {
+    left: 12px;
+    right: 12px;
+    bottom: 12px;
+    padding: 18px 18px;
+  }
+  .cookie-banner__actions .btn {
+    flex: 1 1 100%;
+  }
+}
+
+/* ---- Sehr kleine Geräte (<360px): Markentext ausblenden ---- */
+@media (max-width: 359px) {
+  .brand__text {
+    display: none;
   }
 }
